@@ -1,0 +1,15 @@
+main header {
+    color: blue;
+    font-size: 22px;
+    text-transform: capitalize;
+
+}
+main header h1{
+    font-size: 36px;
+}
+main p{
+    font-size: 18px;
+}
+footer{
+    font-size: 10px;
+}
