@@ -1,20 +1,40 @@
-header nav{
+html, body {
+    width: 100%;
+    height: 100%;
+    grid-gap: 2px;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 'h h h' 'al m ar' 'f f f';
+    grid-auto-columns: 150px 1fr 150px;
+    grid-template-rows: 100px 1fr 50px;
+}
+
+header.navigation {
+    grid-area: h;
     background-color: lightpink;
-    width: 100%;
-    height: 100px;
 }
-aside {
+
+aside.left {
+    grid-area: al;
     background-color: lightskyblue;
-    width: 20%;
-    height: 350px;
+    border: 1px solid black;
 }
-main{
+
+aside.right {
+    grid-area: ar;
+    background-color: lightskyblue;
+    border: 1px solid black;
+}
+
+main {
+    grid-area: m;
     background-color: lightgoldenrodyellow;
-    width: 80%;
-    height: 350px;
+    border: 1px solid black;
 }
-footer{
+
+footer {
+    grid-area: f;
     background-color: grey;
-    width: 100%;
-    height: 20px;
 }

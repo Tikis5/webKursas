@@ -1,0 +1,30 @@
+body{
+    width: 700px;
+}
+div{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    background-color: grey;
+}
+div:nth-child(4n+2){
+    background-color: lightskyblue;
+}
+div:nth-child(4n+4){
+    background-color: lightgreen;
+}
+div:nth-child(2n+16){
+    background-color: lightpink;
+}
+/*.blue{*/
+/*    background-color: lightskyblue;*/
+/*}*/
+/*.green{*/
+/*    background-color: lightgreen;*/
+/*}*/
+/*.pink{*/
+/*    background-color: lightpink;*/
+/*}*/
