@@ -1,0 +1,12 @@
+@keyframes spalvosPasikeitimas {
+    0% {color: red}
+    50% {color: yellowgreen}
+    100% {color: red}
+}
+#elementas:hover{
+    /*color: red;*/
+    /*background-color: red;*/
+    animation-name: spalvosPasikeitimas;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
