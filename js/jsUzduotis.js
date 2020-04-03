@@ -9,7 +9,7 @@ xyz.innerHTML = 'Puslapyje paveiksleliu yra: ' + foto.length;
 //onclick = "window.alert('Puslapyje paveiksleliu yra: ' + foto.length)";
 
 /*4*/
-let fotos = document.querySelectorAll('img:nth-child(2n)')
+let fotos = document.querySelectorAll('img:nth-child(2n)');
 
 for (let i = 0; i < fotos.length; i++) {
     elem = fotos[i];
@@ -35,7 +35,7 @@ let style = {
 // }
 
 //Trecias budas
-// Object.assign(xyz.style, style);
+Object.assign(xyz.style, style);
 
 //Ketvirtas budas
-xyz.setAttribute("class", "stilius2");
+// xyz.setAttribute("class", "stilius2");
