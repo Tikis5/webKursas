@@ -30,9 +30,9 @@ window.addEventListener('load', function () {
     let studentas2 = {
         firstname: 'Tomas',
         lastname: 'Karciauskas',
-        course: 'KCS24',
+        course: 4,
         school: 'Kaunas coding school',
-        grades: [9, 9, 10, 8, 9]
+        grades: [5, 9, 10, 8, 9]
     };
     //5
     let studentai = [
@@ -40,11 +40,11 @@ window.addEventListener('load', function () {
         studentas2,
         studentas,
         {
-            vardas: "Jonas",
-            pavarde: "Jonauskas",
-            kursas: "ksc2",
-            kurMokosi: "LSU",
-            pazymiai: [9, 9, 10, 8, 9],
+            firstname: "Jonas",
+            lastname: "Jonauskas",
+            course: "4",
+            school: "LSU",
+            grades: [9, 9, 10, 8, 9],
         },
     ];
     //6
@@ -60,25 +60,52 @@ window.addEventListener('load', function () {
 
     spausdintiStudenta(studentai[2]);
 
-    //8
     function studentoPazymiai(pazymiai) {
-
+        let pasirinktiPazymiai = [pazymiai[0], pazymiai[2], pazymiai[3]];
+        //8
         for (let i = 0; i < pazymiai.length; i++) {
             console.log(pazymiai[i]);
         }
+        //9 kelimas vienu
+        console.log('//9uzduotis');
+        let suma = 0;
+        for (let i = 0; i < pasirinktiPazymiai.length; i++) {
+
+            if (pasirinktiPazymiai[i] < 10) {
+                console.log('pakeltas 1: ' + (pasirinktiPazymiai[i] + 1));
+            } else {
+                console.log('maksimalus balas ' + pasirinktiPazymiai[i]);
+            }
+            suma += pasirinktiPazymiai[i];
+        }
+
+        //10
+        console.log('suma: ' + suma);
+        //11
+        console.log('sandauga ' + (pazymiai[0] * pazymiai[4]))
+
     }
 
     studentoPazymiai(studentas2.grades);
 
-    //9
-    // function pazymiuPakelimasVienu(pazymys1, pazymys2, pazymys3) {
-    //     if (pazymys1 < 10) {
-    //         console.log(pazymys1 + 1)
-    //     } else {
-    //         console.log(pazymys1 + 1)
-    //     }
-    //
-    // }
+    //12, 13 ir 14
+    function kursoTikrinimas(studentai) {
+        let tipas = typeof studentai[1].course;
+        console.log(tipas);
+        if (studentai[1].course === 4){
+            console.log('studentas mokosi 4 kurse ' + tipas)
+        }
+        for (let i = 0; i < studentai.length; i++){
+            if (studentai[i].course == 4){
+                console.log(studentai[i].firstname + studentai[i].lastname + ' yra abiturientas');
+            }else {
+                console.log(studentai[i].firstname + ' ' + studentai[i].lastname + ' dar toli iki mokslu baigimo');
+            }
+        }
+
+    }
+
+    kursoTikrinimas(studentai)
 
 
 });
