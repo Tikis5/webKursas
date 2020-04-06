@@ -155,6 +155,8 @@ window.addEventListener('load', function () {
     masyvai();
 
     function f() {
-
+        let inputTxt = document.querySelector('.input').getAttribute('value');
+        document.querySelector('[type="button"]').addEventListener('click', sudeti);
     }
+    f();
 });

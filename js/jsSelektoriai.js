@@ -9,3 +9,8 @@ abc.style.display = 'block';
 console.log(xyz.innerHTML);
 console.log(zyx.src);
 console.log(abc.style.display);
+
+$(function () {
+
+    $('.galerijos_foto:nth-child(2n)').attr('alt', 'NEW');
+});
